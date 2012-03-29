@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, Lingua4meActivity!</string>
+    <string name="app_name">Lingua4me</string>
+    <string name="cfg_verbindungsdatenLogin">Login</string>
+    <string name="cfg_verbindungsdatenTitel">Login-Eingabe</string>
+    <string name="cfg_verbindungsdatenPasswort">pwd: </string>
+
+</resources>

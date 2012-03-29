@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myapp="http://schemas.android.com/apk/res/com.jadn.cc"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#000"
+    android:padding="0dip" >
+
+
+ 	<!-- Von Unten her ausgerichtet ....................................... . -->
+ 	<RelativeLayout 
+    	android:layout_height="wrap_content"
+   		android:layout_width="fill_parent"
+ 	    >
+ 	    
+	   <CheckBox 
+	       android:id="@+id/langSelect"
+	    	android:layout_height="wrap_content"
+	   		android:layout_width="wrap_content"
+	       	android:textSize="20dp"
+	       	android:layout_alignParentRight="true"
+	       />
+	   
+	   <TextView 
+	       	android:id="@+id/langName"
+	    	android:layout_height="wrap_content"
+	   		android:layout_width="fill_parent"
+	       	android:textSize="20dp"
+	       	android:text="English"
+	       	android:textColor="#AAAAAA"
+	       	android:layout_toLeftOf="@id/langSelect"
+	       	android:layout_centerVertical="true"
+	       />
+	   
+ 	</RelativeLayout>
+
+
+</LinearLayout>
+

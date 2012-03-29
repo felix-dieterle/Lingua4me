@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myapp="http://schemas.android.com/apk/res/com.jadn.cc"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="#000"
+    android:padding="0dip" >
+
+	<com.admob.android.ads.AdView android:id="@+id/ad"
+	android:layout_width="fill_parent" android:layout_height="48dip"
+	android:layout_alignParentTop="true"/>
+
+ 	<!-- Von Unten her ausgerichtet ....................................... . -->
+ 	
+	<RelativeLayout 
+	    android:id="@+id/soundControlBox"
+	    android:layout_height="wrap_content"
+	    android:layout_width="fill_parent"
+	    android:layout_alignParentBottom="true"
+	    android:layout_marginTop="10dp"
+	    
+	    android:background="#AAAAAA"
+	    >
+		<RelativeLayout 
+		    android:id="@+id/soundButtons"
+		    android:layout_height="wrap_content"
+		    android:layout_width="fill_parent"
+	        android:layout_alignParentTop="true"
+	        android:layout_centerInParent="true"
+	        android:layout_centerHorizontal="true"
+		    >
+	
+		    <ImageButton
+		        android:id="@+id/pausePlay"
+		        android:layout_width="70dip"
+		        android:layout_height="70dip"
+		        android:layout_alignParentTop="true"
+		        android:layout_centerInParent="true"
+		        android:layout_centerHorizontal="true"
+		        android:src="@drawable/play_l4m" />
+		    
+		    <ImageButton
+		        android:id="@+id/previous"
+		        android:layout_width="70dip"
+		        android:layout_height="70dip"
+		        android:layout_alignParentTop="true"
+		        android:layout_toLeftOf="@id/pausePlay"
+		        android:src="@drawable/back_l4m" />
+	
+		    <ImageButton
+		        android:id="@+id/next"
+		        android:layout_width="70dip"
+		        android:layout_height="70dip"
+		        android:layout_alignParentTop="true" 
+		        android:layout_toRightOf="@id/pausePlay"
+		        android:src="@drawable/next_l4m" />
+		    
+		    <TextView 
+		        android:id="@+id/playTime"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_toLeftOf="@id/previous"
+		        android:layout_centerVertical="true"
+		        android:text="1:20"
+		        android:textSize="12dip"
+		        android:textColor="#333333"
+		        />
+		    
+		    <TextView 
+		        android:id="@+id/duration"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentTop="true" 
+		        android:layout_toRightOf="@id/next"
+		        android:layout_centerVertical="true"
+		        android:text="3:10"
+		        android:textSize="12dip"
+		        android:textColor="#333333"
+		        />
+		</RelativeLayout>
+		    
+		<SeekBar android:id="@+id/progress" style="?android:attr/progressBarStyleHorizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="30dip" 
+		    android:layout_centerHorizontal="true"
+			android:layout_below="@id/soundButtons"
+			
+			android:max="100" 
+			android:focusable="false"
+			android:progress="0" android:secondaryProgress="0" android:clickable="true"
+			android:scrollbarAlwaysDrawHorizontalTrack="true"
+			android:scrollbarStyle="insideOverlay"
+			/> 
+		
+	</RelativeLayout>
+
+	
+	<!-- Zwischen oben und unten  __________________________ __ __ -->
+	
+	
+	<RelativeLayout android:id="@+id/trackInformationBox"
+	    android:layout_height="wrap_content"
+	    android:layout_width="fill_parent"
+	    android:layout_below="@id/ad"
+	    android:layout_above="@id/soundControlBox"
+	    >
+		
+	    <RelativeLayout android:id="@+id/trackInformationInnerBox"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_centerHorizontal="true"
+			    android:layout_centerVertical="true"
+			    android:layout_centerInParent="true"
+	        >        
+			<ImageView android:id="@+id/soundImage"
+			    android:layout_width="80dp"
+			    android:layout_height="70dp"
+			    lyt_below="@id/ad"
+			    android:src="@drawable/chemins_de_vie"
+			    android:layout_centerInParent="true"
+			    android:layout_alignParentTop="true"
+			    android:layout_marginBottom="12dp"
+			    />
+			
+			<LinearLayout 
+			    android:id="@+id/soundInfobox"
+			    android:layout_height="wrap_content"
+			    android:layout_width="wrap_content"
+			    android:layout_below="@id/soundImage"
+			    android:orientation="vertical"
+			    android:layout_centerInParent="true"
+			    >
+			    <TextView 
+			        android:id="@+id/playerSoundProvider"
+				    android:layout_height="wrap_content"
+				    android:layout_width="wrap_content"
+			        android:textSize="20dp"
+			        android:text="Chemins de Vie"
+			        />
+			    <TextView 
+			        android:id="@+id/playerSoundTitle"
+				    android:layout_height="wrap_content"
+				    android:layout_width="wrap_content"
+			        android:textSize="17dp"
+			        android:text="Trans World Radio"
+			        />
+			    <TextView 
+			        android:id="@+id/playerSoundCreationTime"
+				    android:layout_height="wrap_content"
+				    android:layout_width="wrap_content"
+			        android:textSize="14dp"
+			        android:text="23 January 2012"
+			        />
+			    
+			    
+			</LinearLayout>
+	    </RelativeLayout>
+			
+		    	    
+	</RelativeLayout>
+	
+	
+
+
+
+</RelativeLayout>
+

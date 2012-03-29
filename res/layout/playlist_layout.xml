@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/playListLayout" >
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="85px"
+        android:layout_height="85px"
+        android:layout_marginLeft="4px"
+        android:layout_marginRight="10px"
+        android:layout_marginTop="4px"
+        android:src="@drawable/chemins_de_vie" >
+    </ImageView>
+    
+    <RelativeLayout 
+        android:id="@+id/soundDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:background="#ff0000" 
+                >
+        
+	   <TextView 
+	       	android:id="@+id/soundProvider"
+	    	android:layout_height="wrap_content"
+	   		android:layout_width="wrap_content"
+	       	android:textSize="20dp"
+	       	android:layout_alignParentTop="true"
+	       	android:text="Chemins de Vie"
+	       	android:textColor="#0000ff"
+	       />
+	   <TextView 
+	       	android:id="@+id/soundTitle"
+	    	android:layout_height="wrap_content"
+	    	android:layout_width="wrap_content"
+	       	android:textSize="17dp"
+	       	android:layout_below="@id/soundProvider"
+	       	android:text="Trans World Radio"
+	       	android:textColor="#0000ff"
+	       />
+	   <TextView 
+	       	android:id="@+id/soundCreationTime"
+	    	android:layout_height="wrap_content"
+	    	android:layout_width="wrap_content"
+	       	android:textSize="14dp"
+	       	android:layout_below="@id/soundTitle"
+	       	android:textColor="#0000ff"
+	       	android:text="23 January 2012"
+	       />
+        
+        
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory android:title="@string/cfg_verbindungsdatenTitel">
+		<EditTextPreference android:key="username"
+			android:title="@string/cfg_verbindungsdatenLogin" />
+			
+		<EditTextPreference android:key="firstStart"
+			android:title="@string/cfg_verbindungsdatenLogin" />
+			
+		<CheckBoxPreference 
+		android:title="First Start of Lingua4me"
+                        android:defaultValue="true"
+                        android:summary="This preference can be true or false"
+                        android:key="firstStart"
+                        android:visible="false"
+                        ></CheckBoxPreference>
+
+		<EditTextPreference android:key="password"
+			android:title="@string/cfg_verbindungsdatenPasswort" />
+	</PreferenceCategory>
+</PreferenceScreen>
